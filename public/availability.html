@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Availability & Doctor Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">VISIONARY PORTAL</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="index.html">Home (Donate)</a>
+                <a class="nav-link active" href="availability.html">Check Availability</a>
+                <button id="logoutBtn" class="btn btn-outline-danger btn-sm ms-3 d-none" onclick="handleLogout()">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row mb-4 align-items-center">
+            <div class="col-md-7">
+                <h2 class="fw-bold text-dark">Available Corneas / Donor Directory</h2>
+                <p class="text-muted">Public users can view standard details. Registered Doctors can login to unlock secure Donor Contact Info.</p>
+            </div>
+            <!-- Doctor Login Panel Area -->
+            <div class="col-md-5">
+                <div id="loginSection" class="card p-3 shadow-sm border-0 bg-white">
+                    <h6 class="fw-bold text-primary mb-2 text-center">Doctor Secure Authentication Portal</h6>
+                    <form id="loginForm" class="row g-2">
+                        <div class="col-6">
+                            <input type="text" id="username" class="form-control form-control-sm" placeholder="User: doctor" required>
+                        </div>
+                        <div class="col-6">
+                            <input type="password" id="password" class="form-control form-control-sm" placeholder="Pass: admin123" required>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary btn-sm w-100 fw-bold">Doctor Login</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="welcomeSection" class="card p-3 shadow-sm border-0 bg-success text-white d-none text-center">
+                    <h6 class="mb-0 fw-bold">✓ Welcome Doctor Portal Activated. Protected contact data unlocked.</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4" id="eyeDisplayGrid">
+            <div class="col-12 text-center text-muted">Connecting to database node server database logs...</div>
+        </div>
+    </div>
+    <script src="js/jsdisplay.js"></script>
+</body>
+</html>

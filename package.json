@@ -1,0 +1,17 @@
+{
+  "name": "eye-bank-mongodb-v2",
+  "version": "2.0.0",
+  "description": "Eye Bank Management System with Login, Eye Overlay Background and Contact Options",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.2.0"
+  }
+}

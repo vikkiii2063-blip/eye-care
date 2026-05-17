@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visionary | Donate Eyes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">VISIONARY EYE BANK</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link active" href="index.html">Donate</a>
+                <a class="nav-link" href="availability.html">Availability (Doctor Portal)</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+                <h1 class="display-5 fw-bold text-primary">Your Eyes Can See <br><span class="text-dark">Even After You.</span></h1>
+                <p class="text-muted mt-3 fs-5">Register below to become a donor. Your details will be securely shared with medical professionals.</p>
+                <!-- Vignesh requested eye image below paragraph description -->
+                <div class="my-4">
+                    <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=400&q=80" alt="Beautiful Clean Abstract Eye" class="img-fluid rounded-3 shadow-sm" style="max-height: 220px; width: 85%; object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-4 shadow-sm border-0">
+                    <h4 class="mb-3 text-center text-primary fw-bold">Donor Registration Form</h4>
+                    <form id="donorForm">
+                        <div class="mb-3">
+                            <label class="form-label font-monospace small text-muted">FULL NAME</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter Full Name" required>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label font-monospace small text-muted">AGE</label>
+                                <input type="number" id="age" class="form-control" placeholder="Age" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label font-monospace small text-muted">SEX</label>
+                                <select id="sex" class="form-select">
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label font-monospace small text-muted">CONTACT NUMBER / EMAIL</label>
+                            <input type="text" id="contact" class="form-control" placeholder="Mobile Number or Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label font-monospace small text-muted">PHYSICAL HEALTH CONDITION</label>
+                            <textarea id="health" class="form-control" rows="2" placeholder="e.g. Normal, Diabetic, wearing glasses..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 py-2 fw-bold mt-2">REGISTER AS DONOR</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jsapp.js"></script>
+</body>
+</html>
